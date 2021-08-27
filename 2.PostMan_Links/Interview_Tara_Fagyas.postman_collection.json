@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "4b1a4ee9-728c-45e4-adaa-8bec1511917e",
+		"name": "Interview_Tara_Fagyas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tara Fagyas",
+			"item": [
+				{
+					"name": "Authenticate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mjavier\",\r\n    \"password\": \"187b7b2514961e1141b6eef7f70f355c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1202/api/login/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1202",
+							"path": [
+								"api",
+								"login",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIyIiwiZXhwIjoxNjMwMDQ1MjA0LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjEyMDIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjEyMDIifQ.sLH83G1_HuQwZTNzoxsPE2zjd7TjFrNBYil3QXyY0hs",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n  \"use_UserName\":  \"mjavier\",\r\n  \"use_Password\": \"187b7b2514961e1141b6eef7f70f355c\",\r\n  \"use_FirstName\": \"Michael\",\r\n  \"use_LastName\": \"Javier Mota\",\r\n  \"use_Phone\": null,\r\n  \"use_email\": null,\r\n  \"use_AddressOfStreet\": null,\r\n  \"use_City\": null,\r\n  \"use_State\": null,\r\n  \"use_Zip\": null,\r\n  \"use_IsActive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1202/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1202",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI2IiwiZXhwIjoxNjMwMDg3MTQwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjEyMDIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjEyMDIifQ.uPDzG8eUNQ-E_FLhzDEAqSrgLl5crnI6fhqBCRXcRM0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n  \"use_UserName\":  \"mjavier\",\r\n  \"use_Password\": \"e10adc3949ba59abbe56e057f20f883e\",\r\n  \"use_FirstName\": \"Modificado\",\r\n  \"use_LastName\": \"Amador\",\r\n  \"use_Phone\": 232323,\r\n  \"use_email\": \"michaeljaviermota@gmail.com\",\r\n  \"use_AddressOfStreet\": \"street\",\r\n  \"use_City\": \"city\",\r\n  \"use_State\": \"state\",\r\n  \"use_Zip\": \"zip\",\r\n  \"use_IsActive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1202/api/user/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1202",
+							"path": [
+								"api",
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1202/api/user/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1202",
+							"path": [
+								"api",
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1202/api/user/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1202",
+							"path": [
+								"api",
+								"user",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUserById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI2IiwiZXhwIjoxNjMwMDg3MTQwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjEyMDIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjEyMDIifQ.uPDzG8eUNQ-E_FLhzDEAqSrgLl5crnI6fhqBCRXcRM0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1202/api/user/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1202",
+							"path": [
+								"api",
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
