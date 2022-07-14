@@ -21,7 +21,7 @@ Deliver a restful service that provides a registration,
       1. ` `and data, 
 1. and unit tests for at least the logic. 
 
-To submit this exercise, please create a free repository on GitHub and share the link to this repository with us. You can create an account via this link: <https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home>
+To submit this exercise, please create a free repository on GitHub and share the link to this repository with us. You can create an account via this link: <https://github.com/michaeljav/NS804.git>
 
 
 
