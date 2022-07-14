@@ -1,5 +1,6 @@
 ﻿
 **Exercise Instructions**
+Before name of directory NS804
 
 For this exercise, we would require .net 4.7.2 WebAPI2 framework.
 
